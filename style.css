@@ -25,47 +25,62 @@ body {
   display: flex;
 }
 .content {
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 100%;
   min-height: 300px;
   margin-top: 10px;
   display: flex;
 }
 
-.profileİmgContainer{
-  border: 1px solid;
+.profileİmgContainer {
+  
   width: 150px;
   height: 150px;
-
 }
-.profileİmgContainer img{
-width: 100%;
-
-
+.profileİmgContainer img {
+  width: 100%;
 }
-.profileİnfosContainer{
+.profileİnfosContainer {
   background-color: rgb(153, 134, 168);
   height: 100%;
-  flex:1;
+  flex: 1;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
-  
 }
 
-.LeftContainer{
-  background-color: antiquewhite;
+.LeftContainer {
   width: 150px;
   height: 100%;
   min-height: 300px;
   
 
-
 }
-.RightContainer{
-  background-color: aqua;
+.RightContainer {
   min-height: 300px;
   flex: 1;
+  background-color: #0077b5;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.contentContainer {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+#linkedin{
+  color:#0077b5;
+}
+
+.leftSectionTitle{
+  font-size: 15px;
+  margin: 10px 8px;
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
 }
