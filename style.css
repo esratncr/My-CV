@@ -1,3 +1,8 @@
+:root {
+  --borderColor: #ddd;
+  --contenttitle: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,35 @@
 }
 
 body {
-  background-color: #ddd;
+  background-color: var(--borderColor);
+}
+.marginTop5 {
+  margin-top: 5px;
+}
+.marginTop30 {
+  margin-top: 30px;
+}
+.topContainer {
+  margin: auto;
+  margin-top: 20px;
+  width: 794px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+#pdfBtn{
+  padding: 6px 20px;
+  border: none;
+  background-color: #d62f2f;
+  color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+}
+#pdfBtn:hover{
+  box-shadow: 0px 0px 6px 0px gray;
+
 }
 .mainContainer {
   width: 794px;
@@ -24,8 +57,14 @@ body {
   height: 150px;
   display: flex;
 }
+
+.headerTitle {
+  margin-top: 5px;
+}
+.headerİnfo {
+  margin: 5px;
+}
 .content {
-  /* border: 1px solid; */
   width: 100%;
   min-height: 300px;
   margin-top: 10px;
@@ -33,7 +72,6 @@ body {
 }
 
 .profileİmgContainer {
-  
   width: 150px;
   height: 150px;
 }
@@ -44,24 +82,15 @@ body {
   background-color: rgb(153, 134, 168);
   height: 100%;
   flex: 1;
-  padding: 20px 20px;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .LeftContainer {
   width: 150px;
   height: 100%;
   min-height: 300px;
-  
-
-}
-.RightContainer {
-  min-height: 300px;
-  flex: 1;
-  background-color: #0077b5;
-  
 }
 
 a {
@@ -74,13 +103,85 @@ a {
   padding-bottom: 5px;
 }
 
-#linkedin{
-  color:#0077b5;
+#linkedin {
+  color: #0077b5;
 }
 
-.leftSectionTitle{
+.leftSectionTitle {
   font-size: 15px;
   margin: 10px 8px;
   border-bottom: 1px solid;
   padding-bottom: 5px;
+}
+
+.skildContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.skillsbox {
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 8px;
+}
+.languageContainer {
+  margin-bottom: 10px;
+}
+.languageTitle {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 5px;
+}
+.languageDetail {
+  font-size: 12px;
+  color: #999;
+  padding-left: 5px;
+}
+
+/* content right */
+
+.RightContainer {
+  min-height: 300px;
+  flex: 1;
+  padding: 0px 10px;
+}
+
+.contentContainerRight {
+  border-left: 4px solid;
+  padding: 20px;
+  margin-top: 20px;
+}
+.componentTitle {
+  font-size: 30px;
+  border-bottom: 2px solid #ddd;
+  color: var(--contenttitle);
+}
+
+.componentitem {
+  font-size: 18px;
+  color: var(--contenttitle);
+}
+.componentitemSub {
+  font-size: 15px;
+  color: var(--contenttitle);
+}
+.componentİnfo {
+  font-size: 12px;
+  color: var(--contenttitle);
+}
+.componentDescription {
+  font-size: 14px;
+
+  color: var(--contenttitle);
+}
+
+.contentUl {
+  padding-left: 30px;
+}
+.tikla {
+  border: 1px solid;
+  background-color: #ccc;
+  border-radius: 3px;
+  margin: 50vh;
+  padding: 4px 4px;
 }

@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <div class="mainContainer">
+    <div class="topContainer">
+        <button id="pdfBtn">PDF İndir</button>
+    </div>
+    <div class="mainContainer" id="myCv">
         <div class="header">
             <div class="profileİmgContainer"> <img src="./2323.jpg" alt=""></div>
             <div class="profileİnfosContainer">
-                <h1>Esra Tuncer </h1>
-                <h4 style="margin-top:-15px;">Junior Frontend Developer</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, beatae?</p>
+                <h1 class="TextTitle">Esra Tuncer </h1>
+                <h4 class="headerTitle">Jr.React-Frontend Developer</h4>
+                <p class="headerİnfo">Fırat Üniversitesi biyomühendislik mezunuyum. Yazılım alanında kendimi geliştirmek
+                    ve daha fazla şeyler öğrenmek adına oline olarak eğitimler aldım.
+                    Bu süreç içerisinde öğrendiğim dilleri ve yaptığım projeleri yaşada beilirttim ve Githup hesabıma
+                    ekledim.
+                </p>
             </div>
         </div>
         <div class="content">
@@ -27,52 +35,105 @@
             <div class="LeftContainer">
                 <div class="contentContainer">
                     <div>
-                        <i class="fa-solid fa-envelope"></i></div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
                     <div class="mailContent">
-                        <a href="mailto:tuncer.esra1453@gmail.com">Mail</a></div>
+                        <a href="mailto:tuncer.esra1453@gmail.com">Mail</a>
+                    </div>
                 </div>
                 <div class="contentContainer">
                     <div>
                         <i id="linkedin" class="fa-brands fa-linkedin"></i>
                     </div>
                     <div class="mailContent">
-                        <a target="_blank" href="https://www.linkedin.com/in/eesratncr/">Linkedln</a></div>
+                        <a target="_blank" href="https://www.linkedin.com/in/eesratncr/">Linkedln</a>
+                    </div>
                 </div>
                 <div class="contentContainer">
                     <div>
                         <i class="fa-brands fa-github"></i>
                     </div>
                     <div class="mailContent">
-                        <a target="_blank" href="https://github.com/esratncr">GitHup</a></div>
-                </div>  <div class="contentContainer">
+                        <a target="_blank" href="https://github.com/esratncr">GitHup</a>
+                    </div>
+                </div>
+                <div class="contentContainer">
                     <div>
                         <i class="fa-solid fa-phone"></i>
                     </div>
                     <div class="mailContent">
-                        <a href="tel:05383771182">Telefon</a></div>
-                </div>  <div class="contentContainer">
+                        <a href="tel:05383771182">Telefon</a>
+                    </div>
+                </div>
+                <div class="contentContainer">
                     <div>
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                   <div>
-                    <span>Elazığ,Türkiye</span>
-                   </div>
+                    <div>
+                        <span>Elazığ,Türkiye</span>
+                    </div>
                 </div>
                 <!-- skils -->
-               <div>
-                <h3 class="leftSectionTitle">YETENEKLER</h3>
-               </div>
-            
-            
-          
-           
-        </div>
-          <!-- right side -->
-        <div class="RightContainer">
-                <h3>selam</h3>
-        </div>
-    </div>
+                <div>
+                    <h3 class="leftSectionTitle">YETENEKLER</h3>
+                    <div class="skildContainer">
 
+                        <p class="skillsbox">HTML</p>
+                        <p class="skillsbox">CSS3</p>
+
+                        <p class="skillsbox">BootStrapt</p>
+                        <p class="skillsbox">React</p>
+                        <p class="skillsbox">JavaScript</p>
+                        <p class="skillsbox">Redux</p>
+                        <p class="skillsbox">Microsoft Office</p>
+                    </div>
+                </div>
+                <h3 class="leftSectionTitle">DİLLER</h3>
+                <div class="languageContainer">
+                    <p class="languageTitle">İngilizce</p>
+                    <p class="languageDetail"><i>Başlangıç </i></p>
+                </div>
+                <div class="languageContainer">
+                    <p class="languageTitle">Türkçe</p>
+                    <p class="languageDetail"><i>Anadili</i></p>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="RightContainer">
+                <h1 class="componentTitle">Eğitim</h1>
+                <div class="contentContainerRight">
+                    <h2 class="componentitem ">Fırat Üniveristesi</h2>
+                    <h3 class="componentitemSub marginTop5">Biyomühendislik</h3>
+                    <p class="componentİnfo marginTop5"><small>2013-2018</small></p>
+                    <p class="componentDescription marginTop5">description</p>
+
+
+                </div>
+                <h1 class="componentTitle marginTop30">Projeler</h1>
+                <div class="contentContainerRight">
+                    <h2 class="componentitem ">My Blog</h2>
+                    <p class="componentitemSub marginTop5"><span>Kendime ait bir blog sitesi yaptım.Burada öğrendiğim
+                            dillerin dökümantasyonlarını ekleyerek <br> yazılıma yeni başlayacak birilerine yardımcı olmak ve
+                            yol haritası oluşturmak adına yapılmış <br> bir sitedir.</span></p>
+                    <h4 class="marginTop5">Kullandığım kütüphaneler;</h4>
+                    <ul class="contentUl">
+
+                        <li class="marginTop5">HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRİPT</li>
+
+                    </ul>
+                   <div>
+                    <a class="tikla" target="_blank" href="https://github.com/esratncr">Göster</a>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>
