@@ -180,8 +180,11 @@ a {
 }
 .tikla {
   border: 1px solid;
-  background-color: #ccc;
+  background-color: #b49cc9;
   border-radius: 3px;
-  margin: 50vh;
-  padding: 4px 4px;
+ 
+}
+
+.Tarih{
+  
 }
